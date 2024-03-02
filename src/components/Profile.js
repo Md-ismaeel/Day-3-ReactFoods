@@ -1,4 +1,3 @@
-import profileImage from "../Assets/photo-profile-image.avif";
 import React from "react";
 import "../Style/profile.css";
 
