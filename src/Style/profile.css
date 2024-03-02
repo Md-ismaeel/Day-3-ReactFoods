@@ -1,0 +1,27 @@
+
+.card {
+  width: 350px;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  /* align-items: center; */
+  gap: 1rem;
+  background-color: #f9fafb;
+  /* filter: drop-shadow(2px 4px 6px black); */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+}
+
+.profile {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  gap: 1rem;
+}
+
+.profile img {
+  border-radius: 50%;
+  cursor: pointer;
+}

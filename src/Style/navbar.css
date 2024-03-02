@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#nav-container {
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  z-index: 2;
+  border-bottom: 0.5px solid rgb(199, 199, 199);
+}
+.geeks-food {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.geeks-food p {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#list-items {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  font-size: 16px;
+  font-weight: 500;
+}
+#list-items a {
+  text-decoration: none;
+  color: black;
+}
+#list-items a:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+hr {
+  opacity: 1;
+}
+
+.geeks-button {
+  border: 0;
+  outline: 0;
+  color: white;
+  font-size: 16px;
+  background-color: #4f46e5;
+  border-radius: 8px;
+  width: 6.5rem;
+  height: 2.3rem;
+  cursor: pointer;
+}
+.geeks-button:hover {
+  background-color: hsl(240, 100%, 35%);
+}
