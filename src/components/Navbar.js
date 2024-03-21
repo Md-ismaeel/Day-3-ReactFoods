@@ -1,6 +1,17 @@
 import "../Style/navbar.css";
 import image1 from "../Assets/logo.svg";
+import { useEffect, useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
+
 const Navbar = () => {
+
+  const location = useLocation();
+  const [activeLink, setActiveLink] = useState("");
+
+  useEffect(() => {
+    setActiveLink(location.pathname);
+  }, [location]);
+
   return (
     <>
       <div id="nav-container">
@@ -11,21 +22,22 @@ const Navbar = () => {
 
         <ul id="list-items">
           <li>
-            <a href="#" style={{ color: "blue" }}>
+            <NavLink to="/" className={activeLink === "/" ? 'text-blue-600 text-xl' : ""}>
               Home
-            </a>
+            </NavLink>
+          </li>
+          <NavLink to="/quote" className={activeLink === "/quote" ? "text-blue-600 text-xl" : ""}>
+            Quote
+          </NavLink>
+          <li>
+            <NavLink to="/restaurants" className={activeLink === "/restaurants" ? "text-blue-600 text-xl" : ""}>Restaurants</NavLink>
+          </li>
+
+          <li>
+            <NavLink to="/food" className={activeLink === "/food" ? "text-blue-600 text-xl" : ""} >Food</NavLink>
           </li>
           <li>
-            <a href="#">Quote</a>
-          </li>
-          <li>
-            <a href="#">Restaurants</a>
-          </li>
-          <li>
-            <a href="#">Food</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
+            <NavLink to="/contact" className={activeLink === "/contact" ? "text-blue-600 text-xl" : ""}>Contact</NavLink>
           </li>
         </ul>
 

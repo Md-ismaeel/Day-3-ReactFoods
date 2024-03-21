@@ -2,7 +2,6 @@ import { useState } from "react";
 import "../Style/restaurantCart.css";
 import data from "../resData.json";
 import { IoLocationSharp } from "react-icons/io5";
-
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
 
@@ -59,8 +58,6 @@ export const RestaurantCard = () => {
                     />
                 </label>
             </div>
-
-            { }
             <div className="container-cart">
 
                 {restaurantData.map((items, index) => {
@@ -68,7 +65,7 @@ export const RestaurantCard = () => {
                         <div className="container-items" key={index}>
                             <div className="details">
                                 <div className="name-start">
-                                    <h4>{items.name}</h4>
+                                    <h4 className="font-bold">{items.name}</h4>
                                     <span>
                                         <Rating
                                             style={{ maxWidth: 120 }}

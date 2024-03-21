@@ -66,10 +66,10 @@ function Home() {
 
       <section className="sec2-container">
         <div className="left-side">
-          <img src={image1} alt="sec Image" width={"620px"} height={"450px"} />
+          <img src={image1} id="c-home-img" alt="sec-Image" />
         </div>
         <div className="right-side">
-          <h1 style={{ fontSize: "30px" }}>
+          <h1 style={{ fontSize: "30px", fontWeight:"700" }}>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore,
             debitis.
           </h1>

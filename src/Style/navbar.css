@@ -15,6 +15,7 @@
   z-index: 2;
   border-bottom: 0.5px solid rgb(199, 199, 199);
 }
+
 .geeks-food {
   display: flex;
   justify-content: center;
@@ -22,6 +23,7 @@
   gap: 0.5rem;
   cursor: pointer;
 }
+
 .geeks-food p {
   font-size: 25px;
   font-weight: 600;
@@ -29,19 +31,18 @@
 
 #list-items {
   display: flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   gap: 2rem;
   font-size: 16px;
   font-weight: 500;
 }
-#list-items a {
+
+/* #list-items a {
   text-decoration: none;
   color: black;
-}
-#list-items a:hover {
-  color: blue;
-  cursor: pointer;
-}
+} */
 
 hr {
   opacity: 1;
@@ -58,6 +59,7 @@ hr {
   height: 2.3rem;
   cursor: pointer;
 }
+
 .geeks-button:hover {
   background-color: hsl(240, 100%, 35%);
 }
