@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Quotes from "./components/Quotes";
 import { RestaurantCard } from "./components/RestaurantCart"
 import { Contact } from "./components/Contact";
+import { Food } from "./components/Food";
 
 function App() {
 
@@ -14,14 +15,14 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />}>
-          </Route>
-          <Route path="/quote" element={<Quotes />}>
-          </Route>
-          <Route path="/restaurants" element={<RestaurantCard />}>
-          </Route>
-          <Route path="/contact" element={<Contact />}>
-          </Route>
+
+          <Route path="/" element={<Home />} />
+          <Route path="/quote" element={<Quotes />} />
+          <Route path="/restaurants" element={<RestaurantCard />} />
+          <Route path="/food" element={<Food />} />
+          <Route path="/contact" element={<Contact />} />
+
+
         </Routes>
         <Footer />
       </BrowserRouter >
